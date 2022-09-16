@@ -38,3 +38,17 @@ body {
     grid-area: 2 / 2 / 4 / 2;
     grid-template-columns: 3fr 1fr;
 }
+
+.project-section {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 1rem 2rem;
+}
+
+.project {
+    display: grid;
+    background: white;
+    border-radius: 15px;
+}
