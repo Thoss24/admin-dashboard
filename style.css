@@ -17,6 +17,8 @@ body {
         'side main-content';
 }
 
+/* HEADING */
+
 .header {
     display: grid;
     grid-area: header;
@@ -28,11 +30,15 @@ body {
     padding: 20px;
 }
 
+/* LEFT SIDEBAR */
+
 .navbar {
     display: grid;
     background: lightblue;
     grid-area: side;
 }
+
+/* MAIN CONTENT SECTION AREA */
 
 .main-content {
     display: grid;
@@ -43,16 +49,18 @@ body {
     grid-template-areas: 
         'project announcement'
         'project trending';
-    min-width: 700px;
+    min-width: 600px;
     padding: 3rem;
     gap: 3rem;
     background-color: lightgrey;
 }
 
+/* PROJECT SECTION */
+
 .project-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: 250px;
+    grid-auto-rows: 300px;
     gap: 2rem 1rem;
 }
 
@@ -67,12 +75,14 @@ body {
     background-color: white;
 }
 
+/* ANNOUNCEMENTS SECTION */
+
 .side-card {
     display: flex;
     flex-direction: column;
     text-align: start;
     border-radius: 15px;
-    padding: 0;
+    padding: 1.3rem;
     background-color: white;
 }
 
@@ -97,13 +107,15 @@ body {
 }
 
 .side-content-announcement > h3 {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
 }
 
 .announcement-item {
     width: 25ch;
     padding: 1rem;
     list-style: none;
+    cursor: pointer;
 }
 
 .announcement-item:first-child {
@@ -114,9 +126,33 @@ body {
     padding-bottom: 0;
 }
 
+/* TRENDING SECTION */
+
 .side-content-trending {
     display: grid;
     grid-area: trending;
-    background: white;
-    border-radius: 15px;
+    max-height: 260px;
+}
+
+.side-content-trending > h3 {
+    margin-bottom: 0.4rem;
+}
+
+.trending-item:first-child {
+    padding-top: 0;
+}
+
+.trending-item {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   cursor: pointer;
+}
+
+.trending-item > p {
+    margin-top: 0.25em;
+    color: rgba(95, 86, 86, 1);
+    font-size: 0.8rem;
+    
+   
 }
