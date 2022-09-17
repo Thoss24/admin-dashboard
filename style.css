@@ -43,6 +43,10 @@ body {
     grid-template-areas: 
         'project announcement'
         'project trending';
+    min-width: 700px;
+    padding: 3rem;
+    gap: 3rem;
+    background-color: lightgrey;
 }
 
 .project-section {
@@ -57,20 +61,57 @@ body {
 }
 
 .project {
-    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: white;
 }
 
-.main-side-content {
-    display: grid;
-    grid-template-rows: auto;
-    gap: 4rem;
+.side-card {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    border-radius: 15px;
+    padding: 0;
+    background-color: white;
 }
 
 .side-content-announcement {
     display: grid;
     grid-area: announcement;
-    background: white;
-    border-radius: 15px;
+}
+
+.announcement-item > h5 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5em;
+}
+
+.announcement-item > p {
+    margin-top: 0.25em;
+    color: rgba(95, 86, 86, 1);
+    font-size: 0.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.side-content-announcement > h3 {
+    margin-bottom: 0.4rem;
+}
+
+.announcement-item {
+    width: 25ch;
+    padding: 1rem;
+    list-style: none;
+}
+
+.announcement-item:first-child {
+    padding-top: 0;
+}
+
+.announcement-item:last-child {
+    padding-bottom: 0;
 }
 
 .side-content-trending {
