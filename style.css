@@ -1,3 +1,8 @@
+@font-face {
+    font-family: roboto;
+    src: url(../admin-dashboard/fonts/Roboto/Roboto-Regular.ttf);
+}
+
 html {
     box-sizing: border-box;
 }
@@ -7,6 +12,7 @@ html {
 }
 
 body {
+    font-family: roboto;
     min-height: 100vh;
     margin: 0;
     display: grid;
@@ -32,14 +38,50 @@ body {
 }
 
 #search-bar-notification {
-    border: 1px solid black;
-    padding: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.search-bar > input {
+    border-radius: 15px;
+    background: rgba(218, 216, 216, 0.4);
+    font-size: 16px;
+    height: 35px;
+    padding-left: 8px;
+    width: 65%;
+}
+
+.search-bar > img {
+    height: 50px;
+    width: 50px;
+}
+
+.notify-logo-name > img {
+    height: 50px;
+    width: 50px;
+}
+
+.notify-logo-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 30%;
+    font-size: 20px;
 }
 
 #handle-greeting-buttons {
-    border: 1px solid black;
     padding: 40px;
 }
+
+
 
 /* LEFT SIDEBAR */
 
@@ -68,7 +110,7 @@ body {
         'project announcement'
         'project trending';
     min-width: 1000px;
-    padding: 3rem;
+    padding: 2rem;
     gap: 3rem;
     background-color: lightgrey;
 }
