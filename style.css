@@ -59,13 +59,18 @@ body {
 
 .project-section {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
-    grid-auto-rows: 300px;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    grid-auto-rows: 220px;
     gap: 2rem 2rem;
 }
 
 .project-view {
     grid-area: project;
+}
+
+.project-view > h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .project {
@@ -82,8 +87,9 @@ body {
     flex-direction: column;
     text-align: start;
     border-radius: 15px;
-    padding: 1.3rem;
+    padding: 1rem;
     background-color: white;
+    margin: 0;
 }
 
 .side-content-announcement {
@@ -94,10 +100,12 @@ body {
 .announcement-item > h5 {
     font-size: 0.9rem;
     margin-bottom: 0.5em;
+    margin-top: 0;
 }
 
 .announcement-item > p {
     margin-top: 0.25em;
+    margin-bottom: 0.25em;
     color: rgba(95, 86, 86, 1);
     font-size: 0.8rem;
     display: -webkit-box;
@@ -107,7 +115,8 @@ body {
 }
 
 .side-content-announcement > h3 {
-    margin-bottom: 0.8rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
     font-size: 1.5rem;
 }
 
@@ -116,6 +125,8 @@ body {
     padding: 1rem;
     list-style: none;
     cursor: pointer;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .announcement-item:first-child {
@@ -135,7 +146,8 @@ body {
 }
 
 .side-content-trending > h3 {
-    margin-bottom: 0.4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .trending-item:first-child {
@@ -149,10 +161,23 @@ body {
    cursor: pointer;
 }
 
-.trending-item > p {
-    margin-top: 0.25em;
+.trending-user-info {
+   display: flex;
+   flex-direction: column;
+}
+
+.trending-user-info > p {
+    margin-top: 0;
+    margin-bottom: 0;
     color: rgba(95, 86, 86, 1);
-    font-size: 0.8rem;
-    
-   
+    font-size: 14px;
+}
+
+.trending-user-info > h5 {
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+}
+
+.trending-item:last-child {
+    margin-bottom: 1.5rem;
 }
