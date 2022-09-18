@@ -49,7 +49,7 @@ body {
     grid-template-areas: 
         'project announcement'
         'project trending';
-    min-width: 600px;
+    min-width: 1000px;
     padding: 3rem;
     gap: 3rem;
     background-color: lightgrey;
@@ -59,9 +59,9 @@ body {
 
 .project-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     grid-auto-rows: 300px;
-    gap: 2rem 1rem;
+    gap: 2rem 2rem;
 }
 
 .project-view {
@@ -112,7 +112,7 @@ body {
 }
 
 .announcement-item {
-    width: 25ch;
+    width: 35ch;
     padding: 1rem;
     list-style: none;
     cursor: pointer;
