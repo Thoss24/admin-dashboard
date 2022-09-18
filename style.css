@@ -22,12 +22,23 @@ body {
 .header {
     display: grid;
     grid-area: header;
+    grid-template-columns: repeat(1, 4fr);
 }
 
-.item {
-    border: 1px solid black;
+.header-items {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-    padding: 20px;
+}
+
+#search-bar-notification {
+    border: 1px solid black;
+    padding: 30px;
+}
+
+#handle-greeting-buttons {
+    border: 1px solid black;
+    padding: 40px;
 }
 
 /* LEFT SIDEBAR */
@@ -35,8 +46,15 @@ body {
 .navbar {
     display: grid;
     background: lightblue;
+    grid-template-rows: repeat(1, 150px) repeat(2, 350px);
     grid-area: side;
 }
+
+.item {
+    border: 1px solid black;
+    padding: 20px;
+}
+
 
 /* MAIN CONTENT SECTION AREA */
 
