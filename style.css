@@ -50,11 +50,12 @@ body {
 
 .search-bar > input {
     border-radius: 15px;
-    background: rgba(218, 216, 216, 0.4);
+    background: rgba(138, 136, 136, 0.4);
     font-size: 16px;
     height: 35px;
     padding-left: 8px;
     width: 65%;
+    border: none;
 }
 
 .search-bar > img {
@@ -150,9 +151,47 @@ body {
     color: white;
 }
 
+.navbar > div > ul {
+    padding: 0;
+    list-style: none;
+}
+
+#dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    gap: 8px;
+    cursor: pointer;
+}
+
+#dashboard > img {
+    height: 48px;
+    width: 48px;
+}
+
 .item {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding: 20px;
+}
+
+.nav-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    font-size: 1em;
+    height: 50px;
+    cursor: pointer;
+}
+
+.nav-list-item > img {
+    height: 24px;
+    width: 28px;
 }
 
 
