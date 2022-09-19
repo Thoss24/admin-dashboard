@@ -308,6 +308,11 @@ body {
    cursor: pointer;
 }
 
+.trending-item > img {
+    height: 50px;
+    width: 50px;
+}
+
 .trending-user-info {
    display: flex;
    flex-direction: column;
