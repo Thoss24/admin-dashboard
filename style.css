@@ -161,7 +161,7 @@ body {
 .main-content {
     display: grid;
     grid-area: main-content;
-    overflow: auto;
+    overflow-y: auto;
     grid-template-columns: 1fr auto;
     grid-template-rows: min-content 1fr;
     grid-template-areas: 
@@ -193,9 +193,38 @@ body {
 
 .project {
     display: flex;
-    flex-direction: column;
-    border-radius: 15px;
+    overflow: hidden;
+    flex-direction: row;
+    border-radius: 10px;
     background-color: white;
+}
+
+.project-color-highlight {
+    height: 100%;
+    width: 2em;
+    background: rgb(250, 220, 52)
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 10px 10px 15px;
+}
+
+.project-text > h3 {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.project-text > p {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    color: rgba(95, 86, 86, 1);
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* ANNOUNCEMENTS SECTION */
@@ -297,5 +326,5 @@ body {
 }
 
 .trending-item:last-child {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1rem;
 }
