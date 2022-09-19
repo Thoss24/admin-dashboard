@@ -208,7 +208,9 @@ body {
 .project-text {
     display: flex;
     flex-direction: column;
-    padding: 25px 10px 10px 15px;
+    padding: 25px 10px 0 15px;
+    height: 65%;
+    overflow: hidden;
 }
 
 .project-text > h3 {
