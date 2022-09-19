@@ -40,7 +40,6 @@ body {
 #search-bar-notification {
     display: flex;
     align-items: center;
-    padding: 10px;
 }
 
 .search-bar {
@@ -78,7 +77,49 @@ body {
 }
 
 #handle-greeting-buttons {
-    padding: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.large-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: 60%;
+    gap: 20px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text > h2 {
+    margin-top: 0.5rem;
+}
+
+.logo-text > p {
+    margin-bottom: 0.5rem;
+}
+
+.greet-name {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.large-logo > img {
+    height: 85px;
+    width: 85px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+    width: 40%;
 }
 
 
