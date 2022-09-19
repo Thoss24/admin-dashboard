@@ -34,7 +34,7 @@ body {
 .header-items {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 #search-bar-notification {
@@ -60,11 +60,13 @@ body {
 .search-bar > img {
     height: 50px;
     width: 50px;
+    cursor: pointer;
 }
 
 .notify-logo-name > img {
     height: 50px;
     width: 50px;
+    cursor: pointer;
 }
 
 .notify-logo-name {
@@ -87,7 +89,7 @@ body {
     display: flex;
     align-items: center;
     margin-left: 10px;
-    width: 60%;
+    width: 70%;
     gap: 20px;
 }
 
@@ -119,7 +121,19 @@ body {
     align-items: center;
     justify-content:center;
     gap: 20px;
-    width: 40%;
+    width: 30%;
+}
+
+.buttons > button {
+    color: white;
+    background: rgb(63, 142, 233);
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 110px;
+    cursor: pointer;
 }
 
 
@@ -128,9 +142,12 @@ body {
 
 .navbar {
     display: grid;
-    background: lightblue;
+    background: rgb(63, 142, 233);
     grid-template-rows: repeat(1, 150px) repeat(2, 350px);
     grid-area: side;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
 }
 
 .item {
